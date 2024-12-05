@@ -130,13 +130,11 @@ function iglog() {
   }, 2000);
 }
 
-function showError(message, boxId) {
-  var errorBox = document.getElementById(boxId);
-  errorBox.style.display = "block";
-  errorBox.querySelector("div:nth-child(2)").textContent = message;
-}
-
 function hideError(boxId) {
   var errorBox = document.getElementById(boxId);
   errorBox.style.display = "none";
+}
+
+function showError(message, boxId) {
+  alert(message); // This will display the message in a pop-up alert
 }
